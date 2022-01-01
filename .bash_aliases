@@ -22,8 +22,21 @@ alias gci='git commit'
 alias gco='git checkout'
 
 # Docker
-alias d='docker'
-alias dc='docker-compose'
+alias dc='docker container'
+alias dcls='docker container ls'
+alias dcr='docker container run'
+alias dcex='docker container exec -i -t'
+alias dcpr='docker container prune'
+alias di='docker image'
+alias dib='docker image build'
+alias dils='docker image ls'
+alias dipr='docker image prune'
+alias dirm='docker image rm'
+alias dipu='docker image pull'
+alias dco='docker-compose'
+alias dcou='docker-compose up -d'
+alias dcod='docker-compose down'
+alias dcor='docker-compose run'
 
 # kubectl
 alias k='kubectl'
