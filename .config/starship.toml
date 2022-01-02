@@ -28,15 +28,15 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨 ×${count}"
-behind = "🐢 ×${count}"
-diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
-untracked = "🛤️  ×${count}"
+ahead = "🏎️ 💨×${count} "
+behind = "🐢×${count} "
+diverged = "🔱 🏎️ 💨×${ahead_count} 🐢×${behind_count} "
+untracked = "🛤️×${count} "
 stashed = "📦 "
-modified = "📝 ×${count}"
-staged = "🗃️  ×${count}"
-renamed = "📛 ×${count}"
-deleted = "🗑️  ×${count}"
+modified = "📝×${count} "
+staged = "🗃️ ×${count} "
+renamed = "📛×${count} "
+deleted = "🗑️×${count} "
 style = "bright-white"
 format = "$all_status$ahead_behind"
 
@@ -52,7 +52,7 @@ style = "bold dimmed white"
 disabled = true
 
 [kubernetes]
-format = "[$symbol$context( \($namespace\))]($style)"
+disabled = false
 
 [memory_usage]
 format = "$symbol[${ram}( | ${swap})]($style) "
@@ -67,12 +67,6 @@ disabled = true
 [python]
 format = "[$symbol$version]($style) "
 symbol = " "
-
-[time]
-time_format = "%T"
-format = "🕙 $time($style) "
-style = "bright-white"
-disabled = false
 
 [username]
 style_user = "bold dimmed blue"
