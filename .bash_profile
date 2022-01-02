@@ -16,5 +16,3 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export STARSHIP_CONFIG=~/.starship/config.toml
-export STARSHIP_CACHE=~/.starship/cache
