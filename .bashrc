@@ -116,4 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval "$(starship init bash)"
+# starship
+# eval "$(starship init bash)"
+
+# bashの設定を引き継いでfishを起動
+exec fish
