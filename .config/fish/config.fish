@@ -4,7 +4,9 @@ end
 
 # path
 set -x PATH /usr/local/go/bin $PATH
+set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
+set -x PATH $HOME/.cargo/bin $PATH
 
 # ghq + fzf
 function ghq_fzf_repo -d 'Repository search'
