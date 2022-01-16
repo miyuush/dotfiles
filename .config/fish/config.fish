@@ -8,6 +8,8 @@ set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
 set -x PATH $HOME/.cargo/bin $PATH
 
+source $HOME/.config/fish/abbreviations.fish
+
 # ghq + fzf
 function ghq_fzf_repo -d 'Repository search'
   ghq list --full-path | fzf --reverse --height=100% | read select
