@@ -16,3 +16,21 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# editor
+
+export EDITOR=nvim
+
+# Go
+
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
+
+# Rust
+
+export PATH=$HOME/.cargo/env:$PATH
+
+# bat
+
+export BAT_THEME="Nord"
+

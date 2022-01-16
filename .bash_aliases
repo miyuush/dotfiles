@@ -1,3 +1,4 @@
+# Basic commands
 alias m='mkdir -p'
 
 alias ..='cd ..'
@@ -10,6 +11,33 @@ alias du='du -h'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+
+if [ $(command -v bat) ];
+then
+    alias cat='bat --wrap auto'
+fi
+
+if [ $(command -v exa) ];
+then
+    alias l='exa --icons --classify'
+    alias la='exa --all --icons --classify'
+    alias ls='exa --icons --classify'
+    alias ll='exa --long --all --git --icons'
+    alias lt='exa --long --all --git --icons --tree'
+else
+    alias l='ls -hF --color=auto'
+    alias ls='ls -hF --color=auto'
+    alias la='ls -ahF --color=auto'
+    alias ll='ls -alhF --color=auto'
+fi
+
+alias t='tmux'
+
+# Vim
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
+alias view='nvim -R'
 
 # Git
 alias g='git'
