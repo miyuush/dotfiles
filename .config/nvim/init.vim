@@ -9,6 +9,7 @@ set clipboard=unnamed " コピーでクリップボードへの登録
 syntax on
 
 call plug#begin()
+Plug 'gkeep/iceberg-dark'
 Plug 'ntk148v/vim-horizon'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -16,7 +17,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-let g:gitgutter_highlight_lines = 1
+let g:lightline = { 'colorscheme': 'icebergDark' }
+
+" 変更した行をハイライト
+" let g:gitgutter_highlight_lines = 1
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
