@@ -21,6 +21,7 @@ end
 # fish key bindings
 function fish_user_key_bindings
   bind \cg ghq_fzf_repo
+  bind \r enter_ls
 end
 
 starship init fish | source
