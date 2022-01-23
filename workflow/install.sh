@@ -9,7 +9,7 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 echo "Install etc"
 sudo apt install -y neovim tmux
 
-echo "Install Golang"
-sudo add-apt-repository ppa:longsleep/golang-backports
-sudo apt update
-sudo apt install -y golang-go
+# echo "Install Golang"
+# sudo add-apt-repository ppa:longsleep/golang-backports
+# sudo apt update
+# sudo apt install -y golang-go
