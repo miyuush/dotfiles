@@ -3,6 +3,7 @@
 /.**
 
 # config
+!/.config/
 !/.config/**
 
 # bash
@@ -18,6 +19,7 @@
 !/.tmux.conf
 
 # ci
+!/.github/
 !/.github/**
 
 # Not ignore

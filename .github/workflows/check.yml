@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    container: ubuntu:latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install required packages
+        run: apt update && apt install -y curl git sudo
+      - name: Install dotfiles
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/miyuush/dotfiles/master/setup.sh)"
