@@ -1,0 +1,29 @@
+# All ignore
+/*
+/.**
+
+# config
+!/.config/**
+
+# bash
+!/.bashrc
+!/.bash_profile
+!/.bash_aliases
+
+# zsh
+!/.zshrc
+
+# tmux
+!/.tmux/
+!/.tmux.conf
+
+# ci
+!/.github/**
+
+# Not ignore
+!/README.md
+!/LICENSE
+!/install.sh
+!/.gitignore
+!/.gitconfig
+!/.gitkeep
