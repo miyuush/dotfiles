@@ -23,7 +23,8 @@
 # Not ignore
 !/README.md
 !/LICENSE
-!/install.sh
+!/workflow/
+!/setup.sh
 !/.gitignore
 !/.gitconfig
 !/.gitkeep
