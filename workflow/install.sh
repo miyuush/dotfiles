@@ -4,7 +4,7 @@ sudo apt update
 sudo apt install -y fish
 
 echo "Install starship"
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+bash <(curl -fsSL https://starship.rs/install.sh) --yes
 
 echo "Install etc"
 sudo apt install -y neovim tmux
