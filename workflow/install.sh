@@ -3,9 +3,6 @@ sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
 
-echo "✅Install fisher"
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-
 echo "✅Install starship"
 bash <(curl -fsSL https://starship.rs/install.sh) --yes
 
@@ -17,7 +14,8 @@ sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install -y golang-go
 
-echo "✅ Set config files"
+echo "✅Set config files"
+rm -rf ~/.config
 ln -sf $PWD/.config/ ~
 ln -sf $PWD/.tmux/ ~
 ln -sf $PWD/.bash_aliases ~/.bash_aliases
