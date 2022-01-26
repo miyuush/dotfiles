@@ -2,7 +2,6 @@ echo "✅Install fish"
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
-fish
 
 echo "✅Install fisher" 
 curl -sL https://git.io/fisher | source
