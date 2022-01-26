@@ -3,6 +3,9 @@ sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
 
+echo "✅Install fisher" 
+bash -c "curl -sL https://git.io/fisher | source"
+
 echo "✅Install starship"
 bash <(curl -fsSL https://starship.rs/install.sh) --yes
 
