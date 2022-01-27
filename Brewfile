@@ -1,0 +1,5 @@
+brew "fish"
+brew "go"
+brew "ghq"
+brew "neovim"
+brew "starship"
