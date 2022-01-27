@@ -18,7 +18,6 @@ jobs:
           apt install -y
           curl
           git
-          software-properties-common
           sudo
       - name: Install dotfiles
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/miyuush/dotfiles/master/setup.sh)"
