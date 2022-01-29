@@ -140,3 +140,5 @@ export NVM_DIR="$HOME/.nvm"
 source .bash_aliases
 
 exec fish
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
