@@ -115,3 +115,5 @@ eval "$(starship init bash)"
 
 # bashの設定を引き継いでfishを起動
 exec fish
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
