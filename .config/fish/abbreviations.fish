@@ -23,10 +23,10 @@ if command -v exa
     abbr --add ll 'exa --long --all --git --icons'
     abbr --add lt 'exa --long --all --git --icons --tree'
 else
-    abbr --add l 'ls -hF --color auto'
-    abbr --add ls 'ls -hF --color auto'
-    abbr --add la 'ls -ahF --color auto'
-    abbr --add ll 'ls -alhF --color auto'
+    abbr --add l 'ls -hF --color=auto'
+    abbr --add ls 'ls -hF --color=auto'
+    abbr --add la 'ls -ahF --color=auto'
+    abbr --add ll 'ls -alhF --color=auto'
 end
 
 abbr --add t 'tmux'
