@@ -26,7 +26,7 @@ fi
 
 # fzf
 export FZF_CTRL_T_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
-export FZF_CTRL_F_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
+export FZF_CTRL_T_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
