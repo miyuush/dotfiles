@@ -1,9 +1,9 @@
 rm -rf ~/.config
-ln -sf $PWD/.config/ ~
-ln -sf $PWD/.tmux/ ~
-ln -sf $PWD/.bash_aliases ~/.bash_aliases
-ln -sf $PWD/.bash_profile ~/.bash_profile
-ln -sf $PWD/.bashrc ~/.bashrc
-ln -sf $PWD/.gitconfig ~/.gitconfig
-ln -sf $PWD/.tmux.conf ~/.tmux.conf
-ln -sf $PWD/Brewfile ~/Brewfile
+ln -sf $(pwd)/.config/ ~
+ln -sf $(pwd)/.tmux/ ~
+ln -sf $(pwd)/.bash_aliases ~/.bash_aliases
+ln -sf $(pwd)/.bash_profile ~/.bash_profile
+ln -sf $(pwd)/.bashrc ~/.bashrc
+ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/.tmux.conf ~/.tmux.conf
+ln -sf $(pwd)/Brewfile ~/Brewfile
