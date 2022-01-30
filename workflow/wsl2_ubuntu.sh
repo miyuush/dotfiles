@@ -12,5 +12,8 @@ echo "✅Install Homebrew"
 echo "✅ Set fzf key bindings"
 . ./install_scripts/fzf_key_binds.sh
 
+echo "✅ Install Vim-Plug"
+. ./install_scripts/vim-plug.sh
+
 echo "✅ Install Node.js"
 . ./install_scripts/nvm.sh
