@@ -113,6 +113,9 @@ fi
 # starship
 eval "$(starship init bash)"
 
+# pyenv
+eval "$(pyenv init -)"
+
 # bashの設定を引き継いでfishを起動
 exec fish
 

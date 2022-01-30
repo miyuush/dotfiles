@@ -8,7 +8,7 @@
 
 # bash
 !/.bashrc
-!/.bash_profile
+!/.profile
 !/.bash_aliases
 
 # zsh

@@ -9,6 +9,8 @@ set -x PATH $GOPATH/bin $PATH
 set -x PATH /usr/local/go/bin $PATH
 set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
 set -x PATH /home/linuxbrew/.linuxbrew/sbin $PATH
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin $PATH
 set -x PATH $HOME/.cargo/bin $PATH
 set -x FZF_CTRL_T_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -x FZF_CTRL_T_OPTS '--preview "bat --color=always --line-range :500 {}"'

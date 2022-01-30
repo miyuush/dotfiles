@@ -10,6 +10,11 @@ export PATH=/usr/local/go/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH
 
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init --path)"
+
 # Rust
 export PATH=$HOME/.cargo/env:$PATH
 
