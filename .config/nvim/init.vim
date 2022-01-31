@@ -1,5 +1,5 @@
 " Set Option
-set shell=/bin/zsh " コマンドの際にはzshを使う
+set shell=/bin/bash " コマンドの際にはbashを使う
 set shiftwidth=4 " 自動インデント時の幅
 set tabstop=4 " スペース*4でタブに変換
 set expandtab " タブの入力の際にはスペースに変換
@@ -9,6 +9,13 @@ set hlsearch " 検索時にハイライト
 set clipboard=unnamed " コピーでクリップボードへの登録
 set number " 行番号の表示
 set termguicolors " 24 bit colorで表示
+set cursorline " カーソル行番号のハイライト
+set ambiwidth=double " 日本語の記号をきれいに表示
+set showmatch " 括弧を閉じるときに、対応する括弧をハイライト
+set showmode " 現在のモードを左下に表示
+set encoding=utf-8 " vimが内部処理に使う文字コード
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8 " ファイルを読み込むときに文字コード推定に使う文字コード
+set fileformats=unix,dos,mac " ファイルを作成、開いたときの改行コード設定
 syntax on
 
 " Install Plugins
