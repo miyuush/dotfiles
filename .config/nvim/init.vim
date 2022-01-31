@@ -9,14 +9,28 @@ set hlsearch " 検索時にハイライト
 set clipboard=unnamed " コピーでクリップボードへの登録
 set number " 行番号の表示
 set termguicolors " 24 bit colorで表示
-set cursorline " カーソル行番号のハイライト
+" set cursorline " カーソル行番号のハイライト
 set ambiwidth=double " 日本語の記号をきれいに表示
 set showmatch " 括弧を閉じるときに、対応する括弧をハイライト
 set showmode " 現在のモードを左下に表示
 set encoding=utf-8 " vimが内部処理に使う文字コード
 set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8 " ファイルを読み込むときに文字コード推定に使う文字コード
 set fileformats=unix,dos,mac " ファイルを作成、開いたときの改行コード設定
+set laststatus=2 " ステータスラインを常に表示
+set mouse=a " マウスのホイールを有効化
+set backspace=indent,eol,start " バックスペースキーの有効化
+set nocursorline " カーソル行番号をハイライトしない
 syntax on
+
+" インサートモード開始時と終了時にカーソル行番号をハイライト
+autocmd InsertEnter,InsertLeave * set cursorline!
+
+" Remap key bindings
+" 表示行で上下にカーソル移動
+noremap j gj
+noremap k gk
+noremap <Down> gj
+noremap <Up> gk
 
 " Install Plugins
 call plug#begin()
