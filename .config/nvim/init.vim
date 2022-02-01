@@ -5,6 +5,7 @@ set tabstop=4 " スペース*4でタブに変換
 set expandtab " タブの入力の際にはスペースに変換
 set textwidth=0 " 自動で行を折り返さない
 set autoindent " 自動インデント :set pasteで解除可能
+set smartindent " プログラミング言語に合わせて自動インデント
 set hlsearch " 検索時にハイライト
 set clipboard=unnamed " コピーでクリップボードへの登録
 set number " 行番号の表示
@@ -20,17 +21,46 @@ set laststatus=2 " ステータスラインを常に表示
 set mouse=a " マウスのホイールを有効化
 set backspace=indent,eol,start " バックスペースキーの有効化
 set nocursorline " カーソル行番号をハイライトしない
+set splitright " 新規ウィンドウを右に開く
+set noequalalways " 新規ウィンドウを開いたときに、自動で全ウィンドウのサイズを均等にしない
+set spell " スペルチェック
+set spelllang=en,cjk " スペルチェックから日本語を除外
+set ruler " カーソルの位置表示
 syntax on
 
 " インサートモード開始時と終了時にカーソル行番号をハイライト
 autocmd InsertEnter,InsertLeave * set cursorline!
+" ファイルを閉じたときのカーソル位置を記録
+autocmd BufReadPost *
+	\ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+	\ |   exe "normal! g`\""
+	\ | endif
 
 " Remap key bindings
+" Normal mode
 " 表示行で上下にカーソル移動
 noremap j gj
 noremap k gk
 noremap <Down> gj
 noremap <Up> gk
+
+noremap <S-h>   ^
+noremap <S-l>   $
+
+" Insert mode
+" インサートモードで素早くjjと入力した場合はESCとみなす
+inoremap <silent> jj <Esc>:<C-u>w<CR>
+
+inoremap <C-j>  <down>
+inoremap <C-k>  <up>
+inoremap <C-h>  <left>
+inoremap <C-l>  <right>
+
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
 
 " Install Plugins
 call plug#begin()
@@ -43,13 +73,14 @@ Plug 'lambdalisue/gina.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sainnhe/gruvbox-material'
 " Plug 'gkeep/iceberg-dark'
+Plug 'itchyny/lightline.vim' " ステータスライン
 
 call plug#end()
 
 " let g:lightline = { 'colorscheme': 'icebergDark' }
 
 " map prefix
-let g:mapleader = "\<Space>"
+let mapleader = "\<Space>"
 nnoremap <Leader> <Nop>
 xnoremap <Leader> <Nop>
 nnoremap [dev]    <Nop>
