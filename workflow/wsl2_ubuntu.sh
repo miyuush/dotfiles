@@ -1,7 +1,7 @@
 echo "✅ Install required packages"
 sudo apt update
 sudo apt upgrade
-sudo apt install -y build-essential file
+sudo apt install -y build-essential file make
 
 echo "✅Set config files"
 . ./install_scripts/config_files.sh
@@ -10,7 +10,7 @@ echo "✅Install Homebrew"
 . ./install_scripts/homebrew.sh
 
 echo "✅Install Go Tools"
-. ./install_scripts/go_tools.sh
+make -f ./install_scripts/go_tools install-go-tools
 
 echo "✅ Set fzf key bindings"
 . ./install_scripts/fzf_key_binds.sh
