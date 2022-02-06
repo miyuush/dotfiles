@@ -14,7 +14,7 @@ dotfiles for mainly `fish`, `starship` users!
 
 ```sh
 # Install Fisher
-curl-sL https://git.io/fisher | source && fisher install jorgebucaran/fisher 
+curl -sL https://git.io/fisher | source
 
 # Install Fish plugin
 fisher update
