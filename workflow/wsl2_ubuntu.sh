@@ -9,6 +9,9 @@ echo "✅Set config files"
 echo "✅Install Homebrew"
 . ./install_scripts/homebrew.sh
 
+echo "✅Install Go Tools"
+. ./install_scripts/go_tools.sh
+
 echo "✅ Set fzf key bindings"
 . ./install_scripts/fzf_key_binds.sh
 
