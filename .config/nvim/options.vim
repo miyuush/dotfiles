@@ -29,7 +29,7 @@ set incsearch " インクリメンタルサーチ
 
 " エンコーディング
 set encoding=utf-8 " vimが内部処理に使う文字コード
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8 " ファイルを読み込むときに文字コード推定に使う文字コード
+set fileencodings=utf-8,euc-jp,iso-2022-jp,cp932,sjis " ファイルを読み込むときに文字コード推定に使う文字コード
 set fileformats=unix,dos,mac " ファイルを作成、開いたときの改行コード設定
 
 " 言語
