@@ -1,6 +1,6 @@
 # dotfiles
 
-dotfiles for mainly `fish`, `starship` users!
+dotfiles for mainly `fish`, `neovim` users!
 
 ## Usage
 
