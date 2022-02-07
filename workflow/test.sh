@@ -1,4 +1,4 @@
-is_exist(){
+is_exist_command(){
    if which $1 ; then
       echo "✅ $1"
    else
@@ -8,9 +8,9 @@ is_exist(){
 
 commands=("fish" "brew" "nvim" "fzf" "exa" "bat" "ghq" "tig")
 
-for c in ${commands}
+for c in ${commands[@]}
 do
-    is_exist $c
+    is_exist_command $c
 done
 
 is_exist_file(){
@@ -21,9 +21,11 @@ is_exist_file(){
     fi
 }
 
-for i in ~/.config/fish/config.fish ~/.config/starship.toml
+files=("~/.config/fish/config.fish" "~/.config/nvim/init.vim" "~/.config/starship.toml")
+
+for f in ${files[@]}
 do
-    is_exist_file $i
+    is_exist_file $f
 done
 
 is_exist_dir(){
@@ -34,9 +36,11 @@ is_exist_dir(){
     fi
 }
 
-for i in  ~/.config/fish ~/.config/nvim 
+dirs=("~/.config/fish" "~/.config/nvim" "~/.tmux")
+
+for d in ${dirs[@]} 
 do
-    is_exist_dir $i
+    is_exist_dir $d
 done
 
 is_exist_link(){
@@ -47,7 +51,9 @@ is_exist_link(){
     fi
 }
 
-for i in ~/.config ~/.gitconfig ~/Brewfile
+links=("~/.config" "~/.bashrc" "~/.gitconfig" ".profile" ".tmux.conf" "Brewfile")
+
+for l in ${links[@]}
 do
-    is_exist_link $i
+    is_exist_link $l
 done
