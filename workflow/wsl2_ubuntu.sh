@@ -3,13 +3,13 @@ sudo apt update
 sudo apt upgrade
 sudo apt install -y build-essential file make
 
-echo "✅Set config files"
+echo "✅ Set config files"
 . ./install_scripts/config_files.sh
 
-echo "✅Install Homebrew"
+echo "✅ Install Homebrew"
 . ./install_scripts/homebrew.sh
 
-echo "✅Install Go Tools"
+echo "✅ Install Go Tools"
 make -f ./install_scripts/go_tools install-go-tools
 
 echo "✅ Set fzf key bindings"
@@ -20,3 +20,6 @@ echo "✅ Install Vim-Plug"
 
 echo "✅ Install Node.js"
 . ./install_scripts/nvm.sh
+
+echo "✅ Test Configuration"
+. ./workflow/test.sh
