@@ -8,8 +8,6 @@ jobs:
   ubuntu_test:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up timezone
-        run: ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
       - name: Install required packages
         run: >
           apt update &&
