@@ -5,7 +5,7 @@
 # config
 !/.config/
 !/.config/**
-/.config/fish/functions/
+/.config/fish/functions/*
 !/.config/fish/functions/enter_ls.fish
 !/.config/fish/functions/fish_user_key_bindings.fish
 !/.config/fish/functions/fzf_key_bindings.fish
