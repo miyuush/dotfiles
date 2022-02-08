@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles [![Ubuntu_Test](https://github.com/miyuush/dotfiles/actions/workflows/test.yml/badge.svg)](https://github.com/miyuush/dotfiles/actions/workflows/test.yml)
 
 dotfiles for mainly [fish](https://fishshell.com/), [neovim](https://neovim.io/) users!
 
