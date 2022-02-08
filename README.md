@@ -14,7 +14,9 @@ dotfiles for mainly [fish](https://fishshell.com/), [neovim](https://neovim.io/)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/miyuush/dotfiles/master/setup.sh)"
 ```
 
-### [Fisher](https://github.com/jorgebucaran/fisher)
+#### [Fisher](https://github.com/jorgebucaran/fisher)
+
+Install fisher and its plugins below
 
 ```sh
 # Install Fisher
