@@ -39,3 +39,4 @@
 !/.gitconfig
 !/.gitkeep
 !/Brewfile
+!/Makefile
