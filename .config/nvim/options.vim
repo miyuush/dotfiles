@@ -58,4 +58,5 @@ set hidden " bufferを切り替えるときに保存しなくてもヨシ
 set belloff=all " すべてのイベントで音を鳴らさない
 set nobackup " ファイルの上書きの前にバックアップを作成しない
 set nowritebackup " ファイルの上書きの前にバックアップを作成しない
+set noswapfile " スワップファイルを作成しない
 set updatetime=300 " 0.3秒の間入力がなければスワップファイルがディスクに書き込まれる
