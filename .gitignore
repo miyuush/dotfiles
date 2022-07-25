@@ -29,6 +29,9 @@
 !/.github/
 !/.github/**
 
+# devcontainer
+!/.devcontainer/
+
 # Not ignore
 !/README.md
 !/LICENSE
