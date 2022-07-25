@@ -23,6 +23,7 @@
 
 # tmux
 !/.tmux/
+!/.tmux/**
 !/.tmux.conf
 
 # ci
@@ -31,6 +32,7 @@
 
 # devcontainer
 !/.devcontainer/
+!/.devcontainer/**
 
 # Not ignore
 !/README.md
