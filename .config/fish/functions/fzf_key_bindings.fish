@@ -1,1 +1,0 @@
-/home/miyuush/.fzf_bin/shell/key-bindings.fish
