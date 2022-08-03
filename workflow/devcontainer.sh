@@ -1,17 +1,11 @@
+cd ~/dotfiles
+
 echo "✅ Set config files"
-. ./install_scripts/config_files.sh
+ln -sf $(pwd)/.devcontainer/*.fish/ ~
+ln -sf $(pwd)/.tmux/ ~
+ln -sf $(pwd)/.bash_aliases ~/.bash_aliases
+ln -sf $(pwd)/.profile ~/.profile
+ln -sf $(pwd)/.bashrc ~/.bashrc
+ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/.tmux.conf ~/.tmux.conf
 
-echo "✅ Install Homebrew"
-. ./install_scripts/homebrew.sh
-
-echo "✅ Set fzf key bindings"
-. ./install_scripts/fzf_key_binds.sh
-
-echo "✅ Install Vim-Plug"
-. ./install_scripts/vim-plug.sh
-
-echo "✅ Install Node.js"
-. ./install_scripts/nvm.sh
-
-echo "✅ Test Configuration"
-. ./workflow/test.sh
