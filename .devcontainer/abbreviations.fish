@@ -13,7 +13,8 @@ abbr --add -g mv 'mv -i'
 abbr --add -g cp 'cp -i'
 
 if command -v bat
-    abbr --add -g cat 'bat --wrap auto'
+    abbr --add -g cat 'batcat --wrap auto'
+    abbr --add -g bat 'batcat --wrap auto''
 end
 
 if command -v exa
