@@ -1,7 +1,8 @@
 cd ~/dotfiles
 
 echo "✅ Set config files"
-mkdir -p $(pwd)/.config/fish
+rm -rf ~/.config
+mkdir -p ~/.config/fish
 ln -sf $(pwd)/.devcontainer/config.fish/ ~/.config/fish/
 ln -sf $(pwd)/.devcontainer/abbreviations.fish/ ~/.config/fish/
 ln -sf $(pwd)/.tmux/ ~
