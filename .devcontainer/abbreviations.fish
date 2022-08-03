@@ -12,7 +12,7 @@ abbr --add -g rm 'rm -i'
 abbr --add -g mv 'mv -i'
 abbr --add -g cp 'cp -i'
 
-if command -v bat
+if command -v batcat
     abbr --add -g cat 'batcat --wrap auto'
     abbr --add -g bat 'batcat --wrap auto'
 end
@@ -21,8 +21,8 @@ if command -v exa
     abbr --add -g l 'exa --icons --classify'
     abbr --add -g la 'exa --all --icons --classify'
     abbr --add -g ls 'exa --icons --classify'
-    abbr --add -g ll 'exa --long --all --git --icons'
-    abbr --add -g lt 'exa --long --all --git --icons --tree'
+    abbr --add -g ll 'exa --long --all --icons'
+    abbr --add -g lt 'exa --long --all --icons --tree'
 else
     abbr --add -g l 'ls -hF --color=auto'
     abbr --add -g ls 'ls -hF --color=auto'
