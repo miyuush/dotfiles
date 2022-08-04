@@ -13,3 +13,4 @@ set -x PATH $HOME/.cargo/bin $PATH
 
 source $HOME/.config/fish/abbreviations.fish
 
+starship init fish | source

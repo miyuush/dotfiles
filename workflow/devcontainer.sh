@@ -5,6 +5,7 @@ rm -rf ~/.config
 mkdir -p ~/.config/fish
 ln -sf $(pwd)/.devcontainer/config.fish ~/.config/fish/config.fish
 ln -sf $(pwd)/.devcontainer/abbreviations.fish ~/.config/fish/abbreviations.fish
+ln -sf $(pwd)/.config/starship.toml ~/.config/starship.toml
 ln -sf $(pwd)/.tmux/ ~
 ln -sf $(pwd)/.bash_aliases ~/.bash_aliases
 ln -sf $(pwd)/.profile ~/.profile
