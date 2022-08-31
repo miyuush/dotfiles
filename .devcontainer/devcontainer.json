@@ -6,7 +6,6 @@
 		// Use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon.
 		"args": { "VARIANT": "jammy" }
 	},
-    "postCreateCommand": "postCreateCommand.sh",
     "settings": {
         "editor.formatOnType": true,
         "editor.formatOnPaste": true,
