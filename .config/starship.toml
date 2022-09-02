@@ -10,8 +10,8 @@ error_symbol = "[➜](bold red)"
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 format = " took [$duration]($style)"
 
-[container]
-disabled = true
+# [container]
+# disabled = true
 
 [directory]
 truncation_length = 5
