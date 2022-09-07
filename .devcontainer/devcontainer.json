@@ -20,7 +20,8 @@
         "oderwat.indent-rainbow",
         "mechatroner.rainbow-csv",
         "shardulm94.trailing-spaces",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "editorconfig.editorconfig"
     ],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
